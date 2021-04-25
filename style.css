@@ -9,6 +9,7 @@
 html {
     box-sizing: border-box;
     font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
 }
 
 *,
@@ -16,6 +17,56 @@ html {
 ::before {
     box-sizing: inherit;
 }
-.cardWrapper__footer{
-display: flex;
+
+.cardWrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 375px;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    text-align: center;
+}
+.card::before{
+    content: "";
+    width: 100%;
+    height: 140px;
+    background-image: url("/images/bg-pattern-card.svg");
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card__heading{
+    color: var(--very-dark-desaturated-blue);
+    font-size: 18px;
+    padding-top: 20px;
+    word-spacing: 2;
+}
+.card__ageElement{
+    color: var(--dark-grayish-blue);
+}
+.card__profile{
+    width:100px;
+    height: 100px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-top: -50px;
+    
+}
+.card__footer {
+    display: flex;
 }
